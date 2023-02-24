@@ -40,9 +40,9 @@ if __name__ == '__main__':
     with open(args.out_path, 'w', newline='') as csvfile:
         fieldnames = ['left', 'right', 'segmentation', 'disparity']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
+        # writer.writeheader()
 
         for left_p, right_p, seg_p, disp_p in zip(*paths.values()):
-            writer.writerow({'left':left_p, 'right':right_p, 'segmentation':seg_p, 'disparity':disp_p})
+            writer.writerow({'left':left_p, 'right':right_p, 'disparity':disp_p, 'segmentation':seg_p})
 
 

@@ -134,3 +134,6 @@ weights/
 data/
 .vscode/
 wandb/
+output/
+test/
+paths.csv
