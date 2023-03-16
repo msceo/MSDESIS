@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import argparse
 from pathlib import Path
 from tqdm import tqdm
@@ -10,7 +12,6 @@ from torchvision import transforms as tv_transforms
 from utils import RunningAvg
 from utils.error_metrics import mIoU
 
-import os
 import pandas as pd
 
 from datasets import scared_stats

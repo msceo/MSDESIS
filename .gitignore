@@ -137,3 +137,6 @@ wandb/
 output/
 test/
 paths.csv
+cal.py
+csv_test
+eval_result

@@ -1,3 +1,5 @@
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import argparse
 from pathlib import Path
 from tqdm import tqdm
@@ -13,7 +15,6 @@ from utils.error_metrics import disparity_bad3, disparity_epe
 import cv2
 import numpy as np
 
-import os
 import pandas as pd
 
 
